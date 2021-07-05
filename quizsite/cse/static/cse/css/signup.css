@@ -1,0 +1,149 @@
+#id1{
+    background-color: black;
+    
+}
+
+#id2{
+    background-color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 2px solid rgb(204, 29, 29);
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+#id3{
+    background-color: black;
+
+}
+#colume2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    background-color: rgb(236, 45, 45);
+    margin-top: 10px;
+    border: 2px solid rgb(204, 29, 29);
+    border-radius: 7px;
+}
+
+#colume1{
+    background-color: black;
+}
+#colume3{
+    background-color: black;
+}
+
+#passwordtext{
+    color: rgb(236, 45, 45);
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+}
+
+#usertext{
+    color: rgb(236, 45, 45);
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+}
+
+
+#username{
+    margin-top: 20px;
+}
+#id_username{
+    height: 45px;
+    width: 338px;
+}
+
+#email{
+    margin-top: 20px;
+}
+#id_email{
+    height: 45px;
+    width: 338px;
+}
+
+#fname{
+    margin-top: 20px;
+}
+#id_first_name{
+    height: 45px;
+    width: 338px;
+}
+
+#lname{
+    margin-top: 20px;
+}
+#id_last_name{
+    height: 45px;
+    width: 338px;
+}
+
+#gender{
+    margin-top: 20px;
+}
+#id_gender{
+    height: 45px;
+    width: 338px;
+}
+
+#contact{
+    margin-top: 20px;
+}
+#id_contact_no{
+    height: 45px;
+    width: 338px;
+}
+
+#city{
+    margin-top: 20px;
+}
+#id_city{
+    height: 45px;
+    width: 338px;
+}
+
+#country{
+    margin-top: 20px;
+}
+#id_country{
+    height: 45px;
+    width: 338px;
+}
+
+#password1{
+    margin-top: 20px;
+}
+#id_password1{
+    height: 45px;
+    width: 338px;
+} 
+
+#password2{
+    margin-top: 20px;
+}
+#id_password2{
+    height: 45px;
+    width: 338px;
+}
+
+.mycheckbox{
+    background-color: white;
+
+}
+#chktext{
+    color: black;
+    margin-top: 20px;
+}
+.mysub{
+    background-color: white;
+}
+#mysign{
+    margin-top: 20px;
+
+}
+.alreadyhave{
+    color: black;
+    margin-top: 5px;
+}

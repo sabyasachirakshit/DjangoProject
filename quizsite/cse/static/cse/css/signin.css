@@ -1,0 +1,88 @@
+
+#id1{
+    background-color:black
+    
+}
+
+#id2{
+    background-color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    border:2px solid rgb(24, 160, 47);
+    padding-top: 5px;
+    padding-bottom:10px;
+    border-radius:15px;
+}
+#id3{
+    background-color: black;
+
+}
+
+#colume1{
+    background-color: black;
+}
+#colume2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    background-color: rgb(21, 177, 47);
+    margin-top: 100px;
+    border:2px solid rgb(24, 160, 47);
+    border-radius: 7px;
+     
+}
+
+#image{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#welcome{
+    margin-top: 3px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#colume3{
+    background-color: black;
+}
+#username{
+    margin-top: 10px;
+}
+#password{
+    margin-top: 10px;
+}
+#id_username{
+    height: 45px;
+    width: 338px;
+    margin-top: 5px;
+    border-color: black;
+    border-width:1px;
+    border-radius: 5px;
+
+}
+
+#id_password{
+    height: 45px;
+    width: 338px;
+    border-color: black;
+    border-width:1px;
+    border-radius: 5px;
+} 
+
+.mysub{
+    background-color: white;
+}
+#mysign{
+    margin-top: 10px;
+    background-color: rgb(21, 177, 47);
+
+}
+.alreadyhave{
+    color: black;
+    margin-top: 5px;
+}
+#forgot{
+    padding-left: 190px;
+    font-size: 15px;
+}
