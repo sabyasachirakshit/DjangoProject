@@ -8,9 +8,9 @@ class Profile(models.Model):
         ('U', 'Others',),
     )
     gender=models.CharField( max_length = 20,choices=GENDER_CHOICES,default="")
-    contact_no=models.IntegerField(null=True)
-    city = models.CharField(max_length=100,default="")
-    country = models.CharField(max_length=100,default="")
+    contact_no=models.IntegerField(blank=True,null=True)
+    city = models.CharField(max_length=100,default="",blank=True)
+    country = models.CharField(max_length=100,default="",blank=True)
     profile_image=models.ImageField(default='default.png',upload_to='profile_pic',blank=True)
 
     def __str__(self):

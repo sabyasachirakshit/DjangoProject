@@ -13,6 +13,7 @@ from django.template.loader import render_to_string
 from .tokens import account_activation_token
 from django.contrib.auth.models import User
 from django.core.mail import EmailMessage
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -94,10 +95,20 @@ def signout(request):
     logout(request)
     return redirect("/")
 
-
+@login_required(login_url='/signin/')
 def profileview(request):
-    u_form=UserUpdateForm(instance=request.user)
-    p_form=ProfileUpdateForm(instance=request.user.profile)
+    if request.method=='POST':
+        u_form=UserUpdateForm(request.POST,instance=request.user)
+        p_form=ProfileUpdateForm(request.POST,
+                                request.FILES,
+                                instance=request.user.profile)
+        if u_form.is_valid() and p_form.is_valid():
+            u_form.save()
+            p_form.save()
+            return redirect("/profile")
+    else:
+        u_form=UserUpdateForm(instance=request.user)
+        p_form=ProfileUpdateForm(instance=request.user.profile)
     context={
         'u_form':u_form,
         'p_form':p_form

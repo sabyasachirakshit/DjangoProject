@@ -41,11 +41,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'import_export',
+    'social_django',
 ]
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.AuthBackends.EmailAuthbackend',
+    'social_core.backends.github.GithubOAuth2',
+    'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.google.GoogleOAuth2',
 ]
 
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
@@ -56,6 +60,15 @@ EMAIL_HOST_PASSWORD = 'tech@hi@21'
 EMAIL_PORT = 587
 
 
+SOCIAL_AUTH_GITHUB_KEY = 'a326e23d797405997a58'
+SOCIAL_AUTH_GITHUB_SECRET = 'a097e6f204e52e9da876c01903e08c6a2c936e0c'
+
+SOCIAL_AUTH_FACEBOOK_KEY = '660382975099900'
+SOCIAL_AUTH_FACEBOOK_SECRET = '6150371799864be8bc87e43d0b16f2b1'
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '1095999458882-70ittjtpq0ir22fk5mv6qq2iu757jops.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'lROiFjUfVS1-GUpFQ6yZUMI7'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -64,6 +77,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'quizsite.urls'
@@ -79,6 +93,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -140,3 +156,5 @@ STATIC_FILES_DIRS=os.path.join(BASE_DIR,"static")
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+
+LOGIN_REDIRECT_URL = '/'

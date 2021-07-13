@@ -66,6 +66,15 @@
 								Don't have an account? <a style="text-decoration:none" href="/signup/">Create Account</a>
 							</div>
 						</div>
+						<div class="sociallog">
+							<p><strong>-- OR SIGN IN WITH --</strong></p>
+							<a id="gimage" style="text-decoration:none" href="{% url 'social:begin' 'google-oauth2' %}"><img src="{% static "cse/image/google.png" %}">
+							<a id="fimage" style="text-decoration:none" href="{% url 'social:begin' 'facebook' %}"><img src="{% static "cse/image/facebook.png" %}">
+							<a id="gitimage" style="text-decoration:none" href="{% url 'social:begin' 'github' %}"> <img src="{% static "cse/image/github.png" %}"><br>
+								<a id="gtext" style="text-decoration:none" href="{% url 'social:begin' 'google-oauth2' %}">Google</a>
+								<a id="ftext" style="text-decoration:none" href="{% url 'social:begin' 'facebook' %}">Facebook</a>
+								<a id="gittext" style="text-decoration:none" href="{% url 'social:begin' 'github' %}">GitHub</a>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4" id="id3">

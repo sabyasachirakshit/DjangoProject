@@ -86,3 +86,26 @@
     padding-left: 190px;
     font-size: 15px;
 }
+
+#gtext{
+    margin-left:11px;
+}
+#ftext{
+    margin-left: 5px;
+}
+#gittext{
+    margin-left: 5px;
+}
+
+#gimage{
+    margin-left: 7px;
+}
+
+#fimage{
+    margin-left: 20px;
+
+}
+#gitimage{
+   margin-left: 15px;
+
+}
