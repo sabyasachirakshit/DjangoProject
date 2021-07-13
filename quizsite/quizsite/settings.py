@@ -55,19 +55,19 @@ AUTHENTICATION_BACKENDS = [
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'hitechblog21@gmail.com'
-EMAIL_HOST_PASSWORD = 'tech@hi@21'
+EMAIL_HOST_USER = 'example@gmail.com'
+EMAIL_HOST_PASSWORD = '********'
 EMAIL_PORT = 587
 
 
-SOCIAL_AUTH_GITHUB_KEY = 'a326e23d797405997a58'
-SOCIAL_AUTH_GITHUB_SECRET = 'a097e6f204e52e9da876c01903e08c6a2c936e0c'
+SOCIAL_AUTH_GITHUB_KEY = '****************'
+SOCIAL_AUTH_GITHUB_SECRET = '*******************'
 
-SOCIAL_AUTH_FACEBOOK_KEY = '660382975099900'
-SOCIAL_AUTH_FACEBOOK_SECRET = '6150371799864be8bc87e43d0b16f2b1'
+SOCIAL_AUTH_FACEBOOK_KEY = '************************'
+SOCIAL_AUTH_FACEBOOK_SECRET = '**************************'
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '1095999458882-70ittjtpq0ir22fk5mv6qq2iu757jops.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'lROiFjUfVS1-GUpFQ6yZUMI7'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '************************************************'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '***********************'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
