@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="{%	static	'cse/css/signin.css' %}" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
@@ -20,8 +20,107 @@
 	<title>Sign In</title>
   </head>
   <body style="background-color:black;">
-	<div class="container-fluid">
-		<form method="POST" class="form-group">
+	<div class="header">
+        <div class="menu-bar">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top first-nav">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="/">MCQhero</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active"  href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Disclaimer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Terms And Conditions</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Blog</a>
+                  </li>  
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top second-navbar">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="navbar-brand" href="/">
+                      <img src="{% static "cse/image/Home.png" %}" alt="home"  width="30" height="24"/>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/python/">Python</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Java</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Javascript</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> C </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">C++</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">C#</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PHP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SQL</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">DBMS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">DS</a>
+                  </li>
+   <!--          <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Others
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>--->
+                </ul>
+                <form class="d-flex" action="" >
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+                  <button class="btn btn-outline-info me-2" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+	<div class="container-fluid" id="contain1">
+		<form method="POST"  class="form-group" >
 			{% csrf_token %}
 			<div class="row">
 				<div class="col-md-4" id="colume1">
@@ -46,17 +145,20 @@
                                 WELCOME
                             </div>
                             <div id='usertext'>
-                                {{form.username}}
+                                👨‍💻 {{form.username}}
                             </div>
 						</div>
 						<div class="col-md-12 " id="password">
-							{{form.password}}
+							🔐 {{form.password}}
 							<div id="forgot">
 								<a  style="text-decoration:none" href="/password_reset/" >Forgot password ?</a>
 							</div>
 						</div>
 						<div class="mysub">
 							<div class="d-grid col-6 mx-auto">
+                {% if request.GET.next %}
+                  <input type="hidden" name="next" value="{{request.GET.next}}">
+                {% endif %}
 								<button id="mysign" type="submit" class="btn btn-success">Sign In</button>
 							</div>
                             <div class=" col-10 mx-auto " id="chktext">
@@ -68,9 +170,9 @@
 						</div>
 						<div class="sociallog">
 							<p><strong>-- OR SIGN IN WITH --</strong></p>
-							<a id="gimage" style="text-decoration:none" href="{% url 'social:begin' 'google-oauth2' %}"><img src="{% static "cse/image/google.png" %}">
-							<a id="fimage" style="text-decoration:none" href="{% url 'social:begin' 'facebook' %}"><img src="{% static "cse/image/facebook.png" %}">
-							<a id="gitimage" style="text-decoration:none" href="{% url 'social:begin' 'github' %}"> <img src="{% static "cse/image/github.png" %}"><br>
+							<a id="gimage" style="text-decoration:none" href="{% url 'social:begin' 'google-oauth2' %}"><img src="{% static "cse/image/google.png" %}"></a>
+							<a id="fimage" style="text-decoration:none" href="{% url 'social:begin' 'facebook' %}"><img src="{% static "cse/image/facebook.png" %}"></a>
+							<a id="gitimage" style="text-decoration:none" href="{% url 'social:begin' 'github' %}"> <img src="{% static "cse/image/github.png" %}"></a><br>
 								<a id="gtext" style="text-decoration:none" href="{% url 'social:begin' 'google-oauth2' %}">Google</a>
 								<a id="ftext" style="text-decoration:none" href="{% url 'social:begin' 'facebook' %}">Facebook</a>
 								<a id="gittext" style="text-decoration:none" href="{% url 'social:begin' 'github' %}">GitHub</a>

@@ -76,7 +76,7 @@
                   <a class="nav-link" href="python/">Python</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Java</a>
+                  <a class="nav-link" href="java/">Java</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Javascript</a>
@@ -123,20 +123,108 @@
           </div>
         </nav>
         <div class="nav2logo">
-          <h1>MCQhero</h1>
-            <p id="pid" style="color: black;">MCQhero Test is a platform to test Your Skills.<br>
-            This is a good platform.Mcq Test is a platform to test Your Skills.This is a good platform.
-            <br>Mcq Test is a platform to test Your Skills.<br>This is a good platform.Mcq Test is a platform to test Your Skills.<br>
-            This is a good platform.Mcq Test is a platform to test Your Skills.</p> 
-            {% if messages %}
-              {% for message in messages %}
-                <small {% if message.tags %} class="{{message.tags}}" {% endif %}>{{message}}</small>
-              {% endfor %}
-            {% endif %}
+          <div class="container-fluid" id="desctext">
+            <h1 style="font-weight: bold;">MCQhero</h1>
+            <div class="textsec">
+              <p>Welcome to MCQHero! This website is all about learning the popular programming languages with fun. <br>
+                Here you can improve your theoretical skills with a single touch / click ! Learning is so much fun when it's done in a interactive digital  playground. <br>Keep Playing keep learning keep cracking the languages.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row" id="row2">
+            <div class="col-md-8" id="col1">
+              
+              <div class="card-group" style="margin-top: 10px;">
+                <div class="card">
+                  <img src="{% static "cse/image/python.svg" %}" class="card-img-top" alt="..." height="240" width="240">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Python MCQ Test</h5>
+                    <p class="card-text">Learning Is Always Interesting, If You Learn In A Fun Way. So, Test Your Python MCQ Skill In A Fun Way. Good Luck.</p>
+                  </div>
+                  <a href="python/" class="btn btn-success col-6 mx-auto" style="margin-bottom: 10px;">Start Test</a>
+                </div>
+                <div class="card">
+                  <img src="{% static "cse/image/java.svg" %}" class="card-img-top" alt="..." height="240" width="240">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;" >Java MCQ Test</h5>
+                    <p class="card-text">Learning Is Always Interesting, If You Learn In A Fun Way. So, Test Your Java MCQ Skill In A Fun Way. Good Luck.</p>
+                  </div>
+                  <a href="java/" class="btn btn-success col-6 mx-auto" style="margin-bottom: 10px;">Start Test</a>
+                </div>
+                <div class="card">
+                  <img src="{% static "cse/image/javascript.svg" %}" class="card-img-top" alt="..." height="240" width="240">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Javascript MCQ Test</h5>
+                    <p class="card-text">Learning Is Always Interesting, If You Learn In A Fun Way. So, Test Your Javascript MCQ Skill In A Fun Way. Good Luck.</p>
+                  </div>
+                  <a href="#" class="btn btn-success col-6 mx-auto" style="margin-bottom: 10px;">Start Test</a>
+                </div>
+              </div>
+              <div class="card-group" >
+                <div class="card">
+                  <img src="{% static "cse/image/c.png" %}" class="card-img-top" alt="..." height="240" width="240">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">C MCQ Test</h5>
+                    <p class="card-text">Learning Is Always Interesting, If You Learn In A Fun Way. So, Test Your C MCQ Skill In A Fun Way. Good Luck.</p>
+                  </div>
+                  <a href="#" class="btn btn-success col-6 mx-auto" style="margin-bottom: 10px;">Start Test</a>
+                </div>
+                <div class="card">
+                  <img src="{% static "cse/image/c-plus.svg" %}" class="card-img-top" alt="..." height="240" width="240">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">C++ MCQ Test</h5>
+                    <p class="card-text">Learning Is Always Interesting, If You Learn In A Fun Way. So, Test Your C++ MCQ Skill In A Fun Way. Good Luck.</p>
+                  </div>
+                  <a href="#" class="btn btn-success col-6 mx-auto" style="margin-bottom: 10px;">Start Test</a>
+                </div>
+                <div class="card">
+                  <img src="{% static "cse/image/c-sharp.svg" %}" class="card-img-top" alt="..." height="240" width="240">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">C# MCQ Test</h5>
+                    <p class="card-text">Learning Is Always Interesting, If You Learn In A Fun Way. So, Test Your C# MCQ Skill In A Fun Way. Good Luck.</p>
+                  </div>
+                  <a href="#" class="btn btn-success col-6 mx-auto" style="margin-bottom: 10px;">Start Test</a>
+                </div>
+              
+              </div>
+              <div class="card-group" style="margin-bottom: 10px;">
+                <div class="card">
+                  <img src="{% static "cse/image/PHP.svg" %}" class="card-img-top" alt="..." height="240" width="240">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">PHP MCQ Test</h5>
+                    <p class="card-text" >Learning Is Always Interesting, If You Learn In A Fun Way. So, Test Your PHP MCQ Skill In A Fun Way. Good Luck.</p>
+                  </div>
+                  <a href="#" class="btn btn-success col-6 mx-auto" style="margin-bottom: 10px;">Start Test</a>
+                </div>
+                <div class="card">
+                  <img src="{% static "cse/image/sql.png" %}" class="card-img-top" alt="..." height="240" width="240">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">SQL MCQ Test</h5>
+                    <p class="card-text" >Learning Is Always Interesting, If You Learn In A Fun Way. So, Test Your SQL MCQ Skill In A Fun Way. Good Luck.</p>
+                  </div>
+                  <a href="#" class="btn btn-success col-6 mx-auto" style="margin-bottom: 10px;">Start Test</a>
+                </div>
+                <div class="card">
+                  <img src="" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Card title</h5>
+                    <p class="card-text">Learning Is Always Interesting, If You Learn In A Fun Way. So, Test Your Python MCQ Skill In A Fun Way. Good Luck.</p>
+                  </div>
+                  <a href="#" class="btn btn-success col-6 mx-auto" style="margin-bottom: 10px;">Start Test</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4" id="col2">
+              
+              side bar
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
     
   </body>
- 
 </html>

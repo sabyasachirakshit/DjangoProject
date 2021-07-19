@@ -14,9 +14,9 @@ class RegisterForm(UserCreationForm):
         ('U', 'Others',),
     )
     gender=forms.ChoiceField(choices=GENDER_CHOICES,)
-    contact_no=forms.IntegerField()
-    city = forms.CharField(max_length=100)
-    country = forms.CharField(max_length=100)
+    contact_no=forms.IntegerField( required=False)
+    city = forms.CharField(max_length=100, required=False)
+    country = forms.CharField(max_length=100, required=False)
     checkbx=forms.BooleanField()
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -57,4 +57,4 @@ class UserUpdateForm(forms.ModelForm):
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model= Profile
-        fields=["gender",  "contact_no", "city", "country","profile_image"]
+        fields=["desc",  "gender",  "contact_no", "city", "country","profile_image"]

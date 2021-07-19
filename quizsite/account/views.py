@@ -14,6 +14,7 @@ from .tokens import account_activation_token
 from django.contrib.auth.models import User
 from django.core.mail import EmailMessage
 from django.contrib.auth.decorators import login_required
+from .models import Profile
 
 
 # Create your views here.
@@ -81,7 +82,10 @@ def signin(request):
             if user is not None:
                 login(request,user)
                 messages.success(request,'Congratulation,Logged in successfully !!')
-                return redirect("/") 
+                if 'next' in request.POST:
+                    return redirect(request.POST.get('next'))
+                else:
+                 return redirect("/") 
 
     else:
         form = SigninForm()
@@ -97,6 +101,11 @@ def signout(request):
 
 @login_required(login_url='/signin/')
 def profileview(request):
+   
+    return render(request,'account/profileview.html')
+
+@login_required(login_url='/signin/')
+def editprofile(request):
     if request.method=='POST':
         u_form=UserUpdateForm(request.POST,instance=request.user)
         p_form=ProfileUpdateForm(request.POST,
@@ -113,4 +122,8 @@ def profileview(request):
         'u_form':u_form,
         'p_form':p_form
     }
-    return render(request,'account/profileview.html',context)
+    return render(request,'account/editprofile.html',context)
+
+
+
+    

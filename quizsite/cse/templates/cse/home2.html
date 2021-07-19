@@ -54,7 +54,12 @@
                   <a class="nav-link" href="">Blog</a>
                 </li>  
               </ul>
-              <a href="/signout/" class="btn btn-outline-warning me-2">Sign Out</a>
+              <a class="profimage" style="text-decoration: none;" href="/profile/"> {{user.first_name}} {{user.last_name}} 
+                {% if user.profile.profile_image%}
+                  <img  class="rounded-circle account-img" id="pimg" src="{{user.profile.profile_image.url}}" width="45" height="45"></a>
+                {% else %}
+                  <img  class="rounded-circle account-img" id="pimg" src="{% static "cse/image/default.png" %}" alt="Profile" width="45" height="45"></a>
+                {% endif %}
             </div>
           </div>
         </nav>
@@ -75,7 +80,7 @@
                   <a class="nav-link" href="python/">Python</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Java</a>
+                  <a class="nav-link" href="java/">Java</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Javascript</a>

@@ -19,6 +19,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf import settings
 from django.conf.urls.static import static
 
+admin.site.name="MCQhero"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('cse.urls', namespace='home')),

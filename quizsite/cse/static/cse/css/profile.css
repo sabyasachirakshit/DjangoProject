@@ -1,7 +1,133 @@
-#proimg{
+.second-navbar {
+    margin-top: 56px;
+    border-top: 0.5px solid rgba(124, 120, 120, 0.973);
+}
+#profimg{
+    height: 110px;
+    width: 110px;
+    border: 3px solid white;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.name{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
     margin-top: 10px;
-    border: 1px solid red;  
+    color: rgba(255, 255, 255, 0.925);
+}
+.desc{
+    color: rgba(255, 255, 255, 0.822);
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.781);
     margin-bottom: 20px;
-    height: 50px;
-    width: 50px;
+
+}
+#row1{
+    background-color: transparent;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 113px;
+}
+#row2{
+    border: black;
+    background-color: rgba(255, 255, 255, 0.925);
+    border-bottom:3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    
+}
+#row3{
+    background-color: transparent;
+
+}
+
+
+#pemail{
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    font-size: 20px;
+    color: black;
+}
+#uemail{
+    color: black;
+    font-size: 18px;
+    padding-top: 3px;
+}
+
+#pcon{
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    font-size: 20px;
+    color: black;
+}
+#ucon{
+    color: black;
+    font-size: 18px;
+    padding-top: 3px;
+}
+#pgen{
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    font-size: 20px;
+    color: black;
+}
+#ugen{
+    color: black;
+    font-size: 18px;
+    padding-top: 3px;
+}
+#ploc{
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    font-size: 20px;
+    color: black;
+}
+#uloc{
+    color: black;
+    font-size: 18px;
+    padding-top: 3px;
+}
+
+
+
+#editp{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+
+}
+    
+#signo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline;
+    float: right;
+    margin-right: 10px;
+   
+
+
+}
+#col7{
+    padding-left: 30px;
+}
+#col8{
+    padding-left: 30px;
 }

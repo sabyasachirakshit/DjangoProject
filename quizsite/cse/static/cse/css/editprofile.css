@@ -1,0 +1,151 @@
+
+.second-navbar {
+    margin-top: 56px;
+    border-top: 0.5px solid rgba(124, 120, 120, 0.973);
+}
+
+#proimage{
+    height: 110px;
+    width: 110px;
+    border: 3px solid white;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#row1{
+   border-top: 3px solid white;
+   border-left: 3px solid white;
+   border-right: 3px solid white;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   margin-top: 113px;
+}
+#row2{
+    border: black;
+    background-color: rgba(255, 255, 255, 0.925);
+    border-bottom:3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 10px;
+}
+#test{
+    text-align: center;
+    color:rgb(230, 19, 19)
+}
+#cimg{
+    color: rgb(202, 28, 28);
+    text-align:right;
+    
+}
+#upload{
+    text-align: center;
+    margin-bottom: 0px;
+    color:white;
+}
+#arr{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#col5a{
+    color:black;
+}
+#col5b{
+    color:black;
+}
+#User{
+    margin-top: 15px;
+    margin-right: 5px;
+}
+#id_username{
+  float: right;
+  margin-right: 10px;
+  width: 230px;
+  
+
+}
+#Email{
+    margin-top: 20px;
+    margin-right: 5px;
+}
+#id_email{
+    float:right;
+    margin-right: 10px;
+    width: 230px;
+}
+#Fname{
+    margin-top: 20px;
+    margin-right: 5px;
+}
+#id_first_name{
+    float:right;
+    margin-right: 10px;
+    width: 230px;
+}
+#Lname{
+    margin-top: 20px;
+    margin-right: 5px;
+}
+#id_last_name{
+    float:right;
+    margin-right: 10px;
+    width: 230px;
+    
+}
+#Cont{
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+#id_contact_no{
+    float:right;
+    margin-right: 10px;
+    width: 225px;
+}
+#Gen{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+#id_gender{
+    float:right;
+    margin-right: 160px;
+
+    
+}
+#City{
+    margin-top: 20px;
+    margin-right: 5px;
+}
+#id_city{
+    float:right;
+    margin-right: 10px;
+    width: 230px;
+}
+#Country{
+    margin-top: 20px;
+    margin-right: 5px;
+}
+#id_country{
+    float: right;
+    margin-right: 10px;
+    width: 230px;
+}
+#Desc{
+    margin-top: 20px;
+    margin-right: 5px;
+}
+#id_desc{
+    float: right;
+    width: 225px;
+    margin-right: 10px;
+}
+
+#submitsec{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
